@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff ;
   display: flex;
@@ -19,7 +23,7 @@ section{
 #navbar{
     background-color: #fff;
     width: 100%;
-    border-bottom:1px solid;
+    border-bottom: 1px solid black;
 }
 
 #navbar li{
@@ -73,4 +77,18 @@ code{
     padding: 0 15px;
     margin: 10px;
     border-radius: 5px;
+}
+
+
+@media only screen and (min-width: 815px){
+    body{
+        flex-direction:row;
+    };
+    #navbar{
+        width: 300px;
+        position: fixed;
+    height: 100%;
+    resize: horizontal;
+    overflow-x: scroll;
+    }
 }
